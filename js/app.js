@@ -53,7 +53,7 @@ class QuizApp {
 
         // 다음 문제
         document.getElementById('next-btn').addEventListener('click', () => this.nextQuestion());
-n        // 중요 표시 버튼
+        // 중요 표시 버튼
         document.getElementById('mark-important-btn').addEventListener('click', () => this.toggleImportant());
 
         // 결과 화면 버튼
@@ -292,7 +292,7 @@ n        // 중요 표시 버튼
         }
     }
 
-// 중요 표시 토글    toggleImportant() {        const question = this.questions[this.currentIndex];        const btn = document.getElementById('mark-important-btn');        const isMarked = btn.classList.contains('marked');                if (isMarked) {            // 중요 표시 해제            btn.classList.remove('marked');            btn.querySelector('span').textContent = '중요 표시';                        // 오답노트에서 제거 (오답이 아닌 경우에만)            const answer = this.answers.find(a => a.qid === question.qid);            if (answer && answer.correct && this.savedWrongAnswers[question.qid]) {                delete this.savedWrongAnswers[question.qid];                this.saveWrongAnswersToStorage();            } else if (this.savedWrongAnswers[question.qid]) {                this.savedWrongAnswers[question.qid].important = false;                this.saveWrongAnswersToStorage();            }        } else {            // 중요 표시            btn.classList.add('marked');            btn.querySelector('span').textContent = '중요 표시됨';                        // 오답노트에 추가            this.markAsImportant(question);        }    }        // 중요 문제로 표시    markAsImportant(question) {        const key = question.qid;        const correctAnswer = Array.isArray(question.correct)            ? question.correct.join(' 또는 ')            : question.correct;                if (this.savedWrongAnswers[key]) {            this.savedWrongAnswers[key].important = true;        } else {            this.savedWrongAnswers[key] = {                qid: question.qid,                range: question.range,                type: question.type,                prompt: question.prompt,                choices: question.choices || null,                correct: question.correct,                correctDisplay: correctAnswer,                explanation: question.explanation,                lastUserAnswer: null,                wrongCount: 0,                lastWrongDate: new Date().toISOString(),                important: true            };        }        this.saveWrongAnswersToStorage();    }
+// 중요 표시 토글    toggleImportant() {        const question = this.questions[this.currentIndex];        const btn = document.getElementById('mark-important-btn');        const isMarked = btn.classList.contains('marked');                if (isMarked) {            btn.classList.remove('marked');            btn.querySelector('span').textContent = '중요 표시';            const answer = this.answers.find(a => a.qid === question.qid);            if (answer && answer.correct && this.savedWrongAnswers[question.qid]) {                delete this.savedWrongAnswers[question.qid];                this.saveWrongAnswersToStorage();            } else if (this.savedWrongAnswers[question.qid]) {                this.savedWrongAnswers[question.qid].important = false;                this.saveWrongAnswersToStorage();            }        } else {            btn.classList.add('marked');            btn.querySelector('span').textContent = '중요 표시됨';            this.markAsImportant(question);        }    }    markAsImportant(question) {        const key = question.qid;        const correctAnswer = Array.isArray(question.correct)            ? question.correct.join(' 또는 ')            : question.correct;                if (this.savedWrongAnswers[key]) {            this.savedWrongAnswers[key].important = true;        } else {            this.savedWrongAnswers[key] = {                qid: question.qid,                range: question.range,                type: question.type,                prompt: question.prompt,                choices: question.choices || null,                correct: question.correct,                correctDisplay: correctAnswer,                explanation: question.explanation,                lastUserAnswer: null,                wrongCount: 0,                lastWrongDate: new Date().toISOString(),                important: true            };        }        this.saveWrongAnswersToStorage();    }
     updateWrongNoteBadge() {
         const count = Object.keys(this.savedWrongAnswers).length;
         const badge = document.getElementById('nav-wrong-count');
@@ -1016,6 +1016,11 @@ n        // 중요 표시 버튼
     }
 
     retryWrongOnly() {
+        if (this.wrongAnswers.length === 0) {
+            alert('다시 풀 오답이 없습니다.');
+            return;
+        }
+
         this.questions = this.wrongAnswers.map(w => w.question);
 
         if (document.getElementById('shuffle-option').checked) {
