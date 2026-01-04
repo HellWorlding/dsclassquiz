@@ -1317,3 +1317,57 @@ header {
         transform: scale(0.98);
     }
 }
+
+/* 피드백 액션 버튼 */
+.feedback-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.btn-outline:hover {
+    background: rgba(74, 144, 217, 0.1);
+    border-color: var(--primary-color);
+}
+
+.important-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.important-btn.marked {
+    background: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+.important-btn.marked svg {
+    fill: #000;
+}
+
+.important-btn svg {
+    transition: all 0.2s;
+}
+
+/* 오답노트 중요 표시 배지 */
+.important-badge {
+    background: #ffc107;
+    color: #000;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.wrong-note-card.important {
+    border-left: 4px solid #ffc107;
+}

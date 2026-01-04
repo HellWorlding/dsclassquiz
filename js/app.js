@@ -53,6 +53,8 @@ class QuizApp {
 
         // 다음 문제
         document.getElementById('next-btn').addEventListener('click', () => this.nextQuestion());
+n        // 중요 표시 버튼
+        document.getElementById('mark-important-btn').addEventListener('click', () => this.toggleImportant());
 
         // 결과 화면 버튼
         document.getElementById('retry-btn').addEventListener('click', () => this.retryQuiz());
@@ -290,6 +292,7 @@ class QuizApp {
         }
     }
 
+// 중요 표시 토글    toggleImportant() {        const question = this.questions[this.currentIndex];        const btn = document.getElementById('mark-important-btn');        const isMarked = btn.classList.contains('marked');                if (isMarked) {            // 중요 표시 해제            btn.classList.remove('marked');            btn.querySelector('span').textContent = '중요 표시';                        // 오답노트에서 제거 (오답이 아닌 경우에만)            const answer = this.answers.find(a => a.qid === question.qid);            if (answer && answer.correct && this.savedWrongAnswers[question.qid]) {                delete this.savedWrongAnswers[question.qid];                this.saveWrongAnswersToStorage();            } else if (this.savedWrongAnswers[question.qid]) {                this.savedWrongAnswers[question.qid].important = false;                this.saveWrongAnswersToStorage();            }        } else {            // 중요 표시            btn.classList.add('marked');            btn.querySelector('span').textContent = '중요 표시됨';                        // 오답노트에 추가            this.markAsImportant(question);        }    }        // 중요 문제로 표시    markAsImportant(question) {        const key = question.qid;        const correctAnswer = Array.isArray(question.correct)            ? question.correct.join(' 또는 ')            : question.correct;                if (this.savedWrongAnswers[key]) {            this.savedWrongAnswers[key].important = true;        } else {            this.savedWrongAnswers[key] = {                qid: question.qid,                range: question.range,                type: question.type,                prompt: question.prompt,                choices: question.choices || null,                correct: question.correct,                correctDisplay: correctAnswer,                explanation: question.explanation,                lastUserAnswer: null,                wrongCount: 0,                lastWrongDate: new Date().toISOString(),                important: true            };        }        this.saveWrongAnswersToStorage();    }
     updateWrongNoteBadge() {
         const count = Object.keys(this.savedWrongAnswers).length;
         const badge = document.getElementById('nav-wrong-count');
@@ -466,11 +469,12 @@ class QuizApp {
         });
 
         return `
-            <div class="wrong-note-card" data-qid="${wrong.qid}">
+            <div class="wrong-note-card${wrong.important ? ' important' : ''}" data-qid="${wrong.qid}">
                 <div class="wrong-note-card-header">
                     <div class="wrong-note-card-meta">
                         <span class="range-tag">${wrong.range}</span>
                         <span class="qid">${wrong.qid}</span>
+                        ${wrong.important ? '<span class="important-badge">중요</span>' : ''}
                     </div>
                     <div class="wrong-stats">
                         <span class="wrong-count">틀린 횟수: ${wrong.wrongCount}회</span>
@@ -837,6 +841,17 @@ class QuizApp {
         }
 
         explanation.textContent = question.explanation;
+
+        // 중요 표시 버튼 상태 업데이트
+        const importantBtn = document.getElementById('mark-important-btn');
+        const isImportant = this.savedWrongAnswers[question.qid]?.important;
+        if (isImportant) {
+            importantBtn.classList.add('marked');
+            importantBtn.querySelector('span').textContent = '중요 표시됨';
+        } else {
+            importantBtn.classList.remove('marked');
+            importantBtn.querySelector('span').textContent = '중요 표시';
+        }
 
         container.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
