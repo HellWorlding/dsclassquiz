@@ -509,6 +509,18 @@ class QuizApp {
                 e.target.textContent = explanation.classList.contains('show') ? '해설 접기' : '해설 보기';
             });
         });
+
+        // 삭제 버튼 이벤트
+        container.querySelectorAll('.delete-wrong-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const qid = e.currentTarget.dataset.qid;
+                this.showConfirm('문제 삭제', '이 문제를 오답노트에서 삭제하시겠습니까?', () => {
+                    this.removeWrongAnswer(qid);
+                    this.renderWrongNoteList();
+                });
+            });
+        });
     }
 
     createWrongNoteCard(wrong) {
@@ -532,6 +544,13 @@ class QuizApp {
                     <div class="wrong-stats">
                         <span class="wrong-count">틀린 횟수: ${wrong.wrongCount}회</span>
                         <span class="last-date">마지막: ${dateStr}</span>
+                    </div>
+                    <button class="delete-wrong-btn" data-qid="${wrong.qid}" title="삭제">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </button>
                     </div>
                 </div>
                 <div class="wrong-note-card-body">

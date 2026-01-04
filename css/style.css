@@ -1371,3 +1371,32 @@ header {
 .wrong-note-card.important {
     border-left: 4px solid #ffc107;
 }
+
+/* 오답노트 삭제 버튼 */
+.delete-wrong-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-wrong-btn:hover {
+    background: rgba(244, 67, 54, 0.1);
+    color: var(--error-color);
+}
+
+.wrong-note-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.wrong-note-card-header .wrong-stats {
+    margin-left: auto;
+}
