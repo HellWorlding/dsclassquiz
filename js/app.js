@@ -292,7 +292,59 @@ class QuizApp {
         }
     }
 
-// 중요 표시 토글    toggleImportant() {        const question = this.questions[this.currentIndex];        const btn = document.getElementById('mark-important-btn');        const isMarked = btn.classList.contains('marked');                if (isMarked) {            btn.classList.remove('marked');            btn.querySelector('span').textContent = '중요 표시';            const answer = this.answers.find(a => a.qid === question.qid);            if (answer && answer.correct && this.savedWrongAnswers[question.qid]) {                delete this.savedWrongAnswers[question.qid];                this.saveWrongAnswersToStorage();            } else if (this.savedWrongAnswers[question.qid]) {                this.savedWrongAnswers[question.qid].important = false;                this.saveWrongAnswersToStorage();            }        } else {            btn.classList.add('marked');            btn.querySelector('span').textContent = '중요 표시됨';            this.markAsImportant(question);        }    }    markAsImportant(question) {        const key = question.qid;        const correctAnswer = Array.isArray(question.correct)            ? question.correct.join(' 또는 ')            : question.correct;                if (this.savedWrongAnswers[key]) {            this.savedWrongAnswers[key].important = true;        } else {            this.savedWrongAnswers[key] = {                qid: question.qid,                range: question.range,                type: question.type,                prompt: question.prompt,                choices: question.choices || null,                correct: question.correct,                correctDisplay: correctAnswer,                explanation: question.explanation,                lastUserAnswer: null,                wrongCount: 0,                lastWrongDate: new Date().toISOString(),                important: true            };        }        this.saveWrongAnswersToStorage();    }
+
+    // 중요 표시 토글
+    toggleImportant() {
+        const question = this.questions[this.currentIndex];
+        const btn = document.getElementById('mark-important-btn');
+        const isMarked = btn.classList.contains('marked');
+
+        if (isMarked) {
+            btn.classList.remove('marked');
+            btn.querySelector('span').textContent = '중요 표시';
+            const answer = this.answers.find(a => a.qid === question.qid);
+            if (answer && answer.correct && this.savedWrongAnswers[question.qid]) {
+                delete this.savedWrongAnswers[question.qid];
+                this.saveWrongAnswersToStorage();
+            } else if (this.savedWrongAnswers[question.qid]) {
+                this.savedWrongAnswers[question.qid].important = false;
+                this.saveWrongAnswersToStorage();
+            }
+        } else {
+            btn.classList.add('marked');
+            btn.querySelector('span').textContent = '중요 표시됨';
+            this.markAsImportant(question);
+        }
+    }
+
+    // 중요 문제로 표시
+    markAsImportant(question) {
+        const key = question.qid;
+        const correctAnswer = Array.isArray(question.correct)
+            ? question.correct.join(' 또는 ')
+            : question.correct;
+
+        if (this.savedWrongAnswers[key]) {
+            this.savedWrongAnswers[key].important = true;
+        } else {
+            this.savedWrongAnswers[key] = {
+                qid: question.qid,
+                range: question.range,
+                type: question.type,
+                prompt: question.prompt,
+                choices: question.choices || null,
+                correct: question.correct,
+                correctDisplay: correctAnswer,
+                explanation: question.explanation,
+                lastUserAnswer: null,
+                wrongCount: 0,
+                lastWrongDate: new Date().toISOString(),
+                important: true
+            };
+        }
+        this.saveWrongAnswersToStorage();
+    }
+
     updateWrongNoteBadge() {
         const count = Object.keys(this.savedWrongAnswers).length;
         const badge = document.getElementById('nav-wrong-count');
