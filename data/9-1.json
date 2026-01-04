@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "course": "경영데이터과학론심화",
+    "tool": "Orange3",
+    "quiz_id": "9-1",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "qid": "9-1-Q01",
+      "type": "mcq",
+      "prompt": "선형회귀분석에서 기울기(slope)가 의미하는 것은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "독립변수가 1 증가할 때 종속변수의 평균 변화량" },
+        { "cid": "B", "text": "종속변수의 평균값" },
+        { "cid": "C", "text": "오차의 분산" },
+        { "cid": "D", "text": "결정계수(R²)" }
+      ]
+    },
+    {
+      "qid": "9-1-Q02",
+      "type": "mcq",
+      "prompt": "다음 중 결정계수(R²)에 대한 설명으로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "예측 오차의 평균 크기" },
+        { "cid": "B", "text": "모델이 설명하지 못한 변동의 비율" },
+        { "cid": "C", "text": "종속변수 변동성 중 모델이 설명하는 비율" },
+        { "cid": "D", "text": "독립변수와 종속변수의 단순 상관계수" }
+      ]
+    },
+    {
+      "qid": "9-1-Q03",
+      "type": "mcq",
+      "prompt": "MSE(Mean Squared Error)에 대한 설명으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "값이 클수록 예측이 정확하다" },
+        { "cid": "B", "text": "0에 가까울수록 예측 성능이 좋다" },
+        { "cid": "C", "text": "분류 문제에서만 사용된다" },
+        { "cid": "D", "text": "결정계수와 항상 반비례한다" }
+      ]
+    },
+    {
+      "qid": "9-1-Q04",
+      "type": "mcq",
+      "prompt": "강의에서 언급된 선형회귀 결과(R² ≈ 0.34)에 대한 해석으로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "모델이 데이터를 거의 완벽히 설명한다" },
+        { "cid": "B", "text": "과적합(overfitting) 상태이다" },
+        { "cid": "C", "text": "데이터의 약 1/3만 설명하고 있어 과소적합 가능성이 있다" },
+        { "cid": "D", "text": "분류 문제이므로 해석이 불가능하다" }
+      ]
+    },
+    {
+      "qid": "9-1-Q05",
+      "type": "mcq",
+      "prompt": "Formula 위젯을 사용해 WineQuality 변수를 생성할 때 사용하는 조건문의 기본 구조는?",
+      "choices": [
+        { "cid": "A", "text": "if 조건 then 값" },
+        { "cid": "B", "text": "값 if 조건 else 값" },
+        { "cid": "C", "text": "조건 when 값" },
+        { "cid": "D", "text": "case when 조건" }
+      ]
+    },
+    {
+      "qid": "9-1-Q06",
+      "type": "mcq",
+      "prompt": "Test & Score 위젯에서 100회의 무작위 샘플링 실험을 수행할 때 설정으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "Cross-validation, 10 folds" },
+        { "cid": "B", "text": "Random sampling, Repeat train/test = 100" },
+        { "cid": "C", "text": "Leave-one-out" },
+        { "cid": "D", "text": "Bootstrap only" }
+      ]
+    },
+    {
+      "qid": "9-1-Q07",
+      "type": "mcq",
+      "prompt": "Permutation Plot의 목적에 가장 부합하는 설명은?",
+      "choices": [
+        { "cid": "A", "text": "변수 중요도를 계산하기 위해" },
+        { "cid": "B", "text": "분류 정확도를 높이기 위해" },
+        { "cid": "C", "text": "모델의 과적합 여부를 점검하기 위해" },
+        { "cid": "D", "text": "데이터 정규화를 수행하기 위해" }
+      ]
+    },
+    {
+      "qid": "9-1-Q08",
+      "type": "mcq",
+      "prompt": "Random Forest 모델이 Decision Tree 모델보다 일반화 성능이 좋은 주된 이유는 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "하나의 트리를 매우 깊게 학습하기 때문" },
+        { "cid": "B", "text": "모든 변수를 항상 사용하기 때문" },
+        { "cid": "C", "text": "여러 트리의 예측을 결합하여 분산을 줄이기 때문" },
+        { "cid": "D", "text": "학습 데이터를 반복해서 그대로 사용하기 때문" }
+      ]
+    },
+    {
+      "qid": "9-1-Q09",
+      "type": "mcq",
+      "prompt": "Calibration Plot에서 모델이 overconfidence 상태라는 것은 무엇을 의미하는가?",
+      "choices": [
+        { "cid": "A", "text": "예측 확률이 실제보다 낮게 나오는 상태" },
+        { "cid": "B", "text": "예측 확률과 실제 정답률이 일치하는 상태" },
+        { "cid": "C", "text": "예측 확률이 실제 정답률보다 과도하게 높은 상태" },
+        { "cid": "D", "text": "항상 정확도가 100%인 상태" }
+      ]
+    },
+    {
+      "qid": "9-1-Q10",
+      "type": "mcq",
+      "prompt": "머신러닝 모델을 평가할 때 정확도(Accuracy)만이 아니라 Permutation Plot과 Calibration Plot을 함께 사용하는 이유로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "모델의 학습 속도를 비교하기 위해" },
+        { "cid": "B", "text": "변수 선택 과정을 자동화하기 위해" },
+        { "cid": "C", "text": "모델의 과적합 여부와 예측의 신뢰성을 함께 판단하기 위해" },
+        { "cid": "D", "text": "데이터의 차원을 축소하기 위해" }
+      ]
+    }
+  ],
+  "answers": [
+    { "qid": "9-1-Q01", "correct": "A" },
+    { "qid": "9-1-Q02", "correct": "C" },
+    { "qid": "9-1-Q03", "correct": "B" },
+    { "qid": "9-1-Q04", "correct": "C" },
+    { "qid": "9-1-Q05", "correct": "B" },
+    { "qid": "9-1-Q06", "correct": "B" },
+    { "qid": "9-1-Q07", "correct": "C" },
+    { "qid": "9-1-Q08", "correct": "C" },
+    { "qid": "9-1-Q09", "correct": "C" },
+    { "qid": "9-1-Q10", "correct": "C" }
+  ],
+  "explanations": [
+    {
+      "qid": "9-1-Q01",
+      "explanation": "기울기는 독립변수가 1 증가할 때 종속변수가 평균적으로 얼마나 변하는지를 의미한다."
+    },
+    {
+      "qid": "9-1-Q02",
+      "explanation": "결정계수 R²는 전체 변동성 중 모델이 설명할 수 있는 비율을 나타낸다."
+    },
+    {
+      "qid": "9-1-Q03",
+      "explanation": "MSE는 예측 오차를 제곱해 평균낸 값으로, 0에 가까울수록 성능이 좋다."
+    },
+    {
+      "qid": "9-1-Q04",
+      "explanation": "R²≈0.34는 데이터의 약 1/3만 설명하고 있음을 의미하며 과소적합 가능성을 시사한다."
+    },
+    {
+      "qid": "9-1-Q05",
+      "explanation": "Orange Formula 위젯은 파이썬 삼항 연산자 형태를 사용한다."
+    },
+    {
+      "qid": "9-1-Q06",
+      "explanation": "Random sampling을 선택하고 반복 횟수를 100으로 설정한다."
+    },
+    {
+      "qid": "9-1-Q07",
+      "explanation": "Permutation Plot은 타깃을 무작위로 섞어 과적합 여부를 점검한다."
+    },
+    {
+      "qid": "9-1-Q08",
+      "explanation": "Random Forest는 여러 트리의 예측을 결합해 분산을 줄인다."
+    },
+    {
+      "qid": "9-1-Q09",
+      "explanation": "Overconfidence는 예측 확률이 실제 정답률보다 과도하게 높은 상태이다."
+    },
+    {
+      "qid": "9-1-Q10",
+      "explanation": "정확도뿐 아니라 과적합 여부와 확률 신뢰성까지 함께 평가하기 위함이다."
+    }
+  ]
+}

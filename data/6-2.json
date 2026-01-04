@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "course": "경영데이터과학론심화",
+    "tool": "Orange3",
+    "quiz_id": "6-2",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "qid": "6-2-Q01",
+      "type": "mcq",
+      "prompt": "FasterRisk 모델에서 아무 정보가 없을 때 기본적으로 설정되는 확률은 얼마입니까?",
+      "choices": [
+        { "cid": "A", "text": "0%" },
+        { "cid": "B", "text": "25%" },
+        { "cid": "C", "text": "50%" },
+        { "cid": "D", "text": "데이터 비율에 따라 달라진다" }
+      ]
+    },
+    {
+      "qid": "6-2-Q02",
+      "type": "mcq",
+      "prompt": "FasterRisk가 Decision Tree와 비교하여 특히 강조하는 장점은 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "계산 속도가 매우 빠르다" },
+        { "cid": "B", "text": "비지도학습이 가능하다" },
+        { "cid": "C", "text": "사람에게 설명 가능한 구조를 가진다" },
+        { "cid": "D", "text": "자동으로 데이터를 전처리한다" }
+      ]
+    },
+    {
+      "qid": "6-2-Q03",
+      "type": "mcq",
+      "prompt": "Type 1 Error에 해당하는 설명으로 가장 올바른 것은 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "실제 양성인데 음성으로 예측한 경우" },
+        { "cid": "B", "text": "실제 음성인데 양성으로 예측한 경우" },
+        { "cid": "C", "text": "실제 양성이고 양성으로 예측한 경우" },
+        { "cid": "D", "text": "실제 음성이고 음성으로 예측한 경우" }
+      ]
+    },
+    {
+      "qid": "6-2-Q04",
+      "type": "mcq",
+      "prompt": "의료 진단 문제에서 Type 2 Error가 특히 치명적인 이유는 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "검사 비용이 증가하기 때문에" },
+        { "cid": "B", "text": "데이터 수가 적기 때문에" },
+        { "cid": "C", "text": "실제 환자를 놓칠 수 있기 때문에" },
+        { "cid": "D", "text": "모델의 정확도가 낮아지기 때문에" }
+      ]
+    },
+    {
+      "qid": "6-2-Q05",
+      "type": "mcq",
+      "prompt": "강의에서 강조한 내용으로 옳은 설명은 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "Type 1·2 Error는 혼동행렬의 위치로만 결정된다" },
+        { "cid": "B", "text": "정확도만 높으면 모델은 항상 우수하다" },
+        { "cid": "C", "text": "오류의 경제적 영향은 문제 상황에 따라 다르다" },
+        { "cid": "D", "text": "모든 문제에서 Precision이 가장 중요하다" }
+      ]
+    },
+    {
+      "qid": "6-2-Q06",
+      "type": "mcq",
+      "prompt": "사후적 경제성 분석에서 머신러닝 모델을 비교하는 최종 목적은 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "정확도를 가장 높이는 모델을 찾기 위해" },
+        { "cid": "B", "text": "Precision이 가장 높은 모델을 찾기 위해" },
+        { "cid": "C", "text": "총 비용을 최소화하는 선택을 하기 위해" },
+        { "cid": "D", "text": "가장 복잡한 모델을 사용하기 위해" }
+      ]
+    },
+    {
+      "qid": "6-2-Q07",
+      "type": "mcq",
+      "prompt": "앙상블(Ensemble) 기법의 기본 아이디어로 가장 적절한 것은 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "하나의 강력한 모델을 선택한다" },
+        { "cid": "B", "text": "여러 모델의 결과를 결합한다" },
+        { "cid": "C", "text": "비지도학습 모델만 사용한다" },
+        { "cid": "D", "text": "feature 개수를 줄이는 기법이다" }
+      ]
+    },
+    {
+      "qid": "6-2-Q08",
+      "type": "mcq",
+      "prompt": "Random Forest가 Decision Tree 단독 사용보다 과적합에 강한 이유는 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "트리 깊이가 항상 얕기 때문이다" },
+        { "cid": "B", "text": "하나의 데이터만 사용하기 때문이다" },
+        { "cid": "C", "text": "여러 트리를 학습시켜 평균/투표하기 때문이다" },
+        { "cid": "D", "text": "모든 feature를 항상 사용하기 때문이다" }
+      ]
+    },
+    {
+      "qid": "6-2-Q09",
+      "type": "mcq",
+      "prompt": "Bagging(Bootstrap Aggregating)에 대한 설명으로 옳은 것은 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "데이터를 한 번만 추출해 학습한다" },
+        { "cid": "B", "text": "복원 추출로 여러 학습 데이터를 만든다" },
+        { "cid": "C", "text": "하나의 모델만 반복 학습한다" },
+        { "cid": "D", "text": "순차적으로 오차를 보정한다" }
+      ]
+    },
+    {
+      "qid": "6-2-Q10",
+      "type": "mcq",
+      "prompt": "Random Forest에서 Feature Importance의 의미로 가장 적절한 것은 무엇입니까?",
+      "choices": [
+        { "cid": "A", "text": "변수가 많을수록 중요도가 높다" },
+        { "cid": "B", "text": "반복 학습을 통해 예측에 많이 기여한 변수이다" },
+        { "cid": "C", "text": "숫자형 변수만 중요도가 계산된다" },
+        { "cid": "D", "text": "Target과 상관없는 변수이다" }
+      ]
+    }
+  ],
+  "answers": [
+    { "qid": "6-2-Q01", "correct": "C" },
+    { "qid": "6-2-Q02", "correct": "C" },
+    { "qid": "6-2-Q03", "correct": "B" },
+    { "qid": "6-2-Q04", "correct": "C" },
+    { "qid": "6-2-Q05", "correct": "C" },
+    { "qid": "6-2-Q06", "correct": "C" },
+    { "qid": "6-2-Q07", "correct": "B" },
+    { "qid": "6-2-Q08", "correct": "C" },
+    { "qid": "6-2-Q09", "correct": "B" },
+    { "qid": "6-2-Q10", "correct": "B" }
+  ],
+  "explanations": [
+    {
+      "qid": "6-2-Q01",
+      "explanation": "FasterRisk는 정보가 없을 때 기준 확률(베이스라인)을 50%로 두고 출발한다."
+    },
+    {
+      "qid": "6-2-Q02",
+      "explanation": "FasterRisk는 변수별 점수(point) 구조를 통해 사람이 이해하고 설명할 수 있는 모델을 지향한다."
+    },
+    {
+      "qid": "6-2-Q03",
+      "explanation": "Type 1 Error는 False Positive로, 실제는 음성인데 양성으로 잘못 예측한 경우이다."
+    },
+    {
+      "qid": "6-2-Q04",
+      "explanation": "Type 2 Error는 False Negative로, 실제 환자를 정상으로 판단해 치료 시기를 놓칠 수 있어 치명적이다."
+    },
+    {
+      "qid": "6-2-Q05",
+      "explanation": "오류의 비용은 문제 상황에 따라 다르므로, 단일 지표만으로 모델을 평가하는 것은 위험하다."
+    },
+    {
+      "qid": "6-2-Q06",
+      "explanation": "사후적 경제성 분석의 목적은 정확도 극대화가 아니라 총 비용을 최소화하는 의사결정이다."
+    },
+    {
+      "qid": "6-2-Q07",
+      "explanation": "앙상블은 여러 모델의 예측을 결합해 단일 모델보다 안정적이고 강한 성능을 얻는다."
+    },
+    {
+      "qid": "6-2-Q08",
+      "explanation": "Random Forest는 여러 트리를 Bagging으로 학습하고 결과를 결합해 분산을 줄인다."
+    },
+    {
+      "qid": "6-2-Q09",
+      "explanation": "Bagging은 복원추출로 여러 학습 데이터를 만들고 각 모델의 결과를 집계하는 방식이다."
+    },
+    {
+      "qid": "6-2-Q10",
+      "explanation": "Feature Importance는 예측에 반복적으로 크게 기여한 변수를 의미한다."
+    }
+  ]
+}

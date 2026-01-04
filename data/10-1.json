@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "course": "경영데이터과학론심화",
+    "tool": "Orange3",
+    "quiz_id": "10-1",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "qid": "10-1-Q01",
+      "type": "mcq",
+      "prompt": "결측값을 평균/최빈값으로 대체하는 방법의 단점으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "데이터 손실 발생" },
+        { "cid": "B", "text": "계산 비용 증가" },
+        { "cid": "C", "text": "분포 왜곡이나 편향 발생 가능" },
+        { "cid": "D", "text": "재현성 문제 발생" }
+      ]
+    },
+    {
+      "qid": "10-1-Q02",
+      "type": "mcq",
+      "prompt": "Gradient Boosting의 기본 개념으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "강한 학습기를 병렬로 학습" },
+        { "cid": "B", "text": "약한 학습기를 순차적으로 학습" },
+        { "cid": "C", "text": "하나의 결정트리만 사용" },
+        { "cid": "D", "text": "데이터 전처리를 생략" }
+      ]
+    },
+    {
+      "qid": "10-1-Q03",
+      "type": "mcq",
+      "prompt": "Gradient Boosting에서 반복적으로 학습하는 대상은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "입력 변수" },
+        { "cid": "B", "text": "클래스 레이블" },
+        { "cid": "C", "text": "잔차(오차)" },
+        { "cid": "D", "text": "정규화 항" }
+      ]
+    },
+    {
+      "qid": "10-1-Q04",
+      "type": "mcq",
+      "prompt": "경사하강법(Gradient Descent)에 대한 설명으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "손실값을 최대화하는 방향으로 이동" },
+        { "cid": "B", "text": "무작위로 파라미터를 변경" },
+        { "cid": "C", "text": "손실값이 최소가 되는 방향으로 모델 업데이트" },
+        { "cid": "D", "text": "트리 개수를 조절하는 방법" }
+      ]
+    },
+    {
+      "qid": "10-1-Q05",
+      "type": "mcq",
+      "prompt": "XGBoost의 특징으로 옳지 않은 것은?",
+      "choices": [
+        { "cid": "A", "text": "정규화를 통한 과적합 제어" },
+        { "cid": "B", "text": "결측치 자동 처리" },
+        { "cid": "C", "text": "병렬 학습 지원" },
+        { "cid": "D", "text": "수동으로만 조기 종료 가능" }
+      ]
+    },
+    {
+      "qid": "10-1-Q06",
+      "type": "mcq",
+      "prompt": "Gradient Boosting에서 모델을 여러 번 학습하는 주된 목적은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "데이터를 줄이기 위해" },
+        { "cid": "B", "text": "계산 속도를 늦추기 위해" },
+        { "cid": "C", "text": "이전 모델의 오류를 줄이기 위해" },
+        { "cid": "D", "text": "변수를 제거하기 위해" }
+      ]
+    },
+    {
+      "qid": "10-1-Q07",
+      "type": "mcq",
+      "prompt": "XGBoost에서 Regularization 파라미터(λ, lambda)를 매우 크게 설정했을 때 발생할 수 있는 문제는?",
+      "choices": [
+        { "cid": "A", "text": "과적합" },
+        { "cid": "B", "text": "과소적합" },
+        { "cid": "C", "text": "학습 불가" },
+        { "cid": "D", "text": "데이터 누수" }
+      ]
+    },
+    {
+      "qid": "10-1-Q08",
+      "type": "mcq",
+      "prompt": "XGBoost가 Kaggle 대회에서 널리 사용된 주요 이유로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "구현이 단순해서" },
+        { "cid": "B", "text": "시각화 기능이 뛰어나서" },
+        { "cid": "C", "text": "정규화, 병렬학습, 빠른 속도를 제공해서" },
+        { "cid": "D", "text": "지도학습만 지원해서" }
+      ]
+    },
+    {
+      "qid": "10-1-Q09",
+      "type": "short",
+      "prompt": "Gradient Boosting에서 모델을 업데이트할 때 기준이 되는 값은 무엇인가?"
+    },
+    {
+      "qid": "10-1-Q10",
+      "type": "essay",
+      "prompt": "XGBoost를 사용하면 좋은 점 한 가지를 서술하시오."
+    }
+  ],
+  "answers": [
+    { "qid": "10-1-Q01", "correct": "C" },
+    { "qid": "10-1-Q02", "correct": "B" },
+    { "qid": "10-1-Q03", "correct": "C" },
+    { "qid": "10-1-Q04", "correct": "C" },
+    { "qid": "10-1-Q05", "correct": "D" },
+    { "qid": "10-1-Q06", "correct": "C" },
+    { "qid": "10-1-Q07", "correct": "B" },
+    { "qid": "10-1-Q08", "correct": "C" },
+    {
+      "qid": "10-1-Q09",
+      "correct": ["손실함수의 기울기", "gradient", "손실함수의 gradient"]
+    },
+    {
+      "qid": "10-1-Q10",
+      "correct": "rubric"
+    }
+  ],
+  "explanations": [
+    {
+      "qid": "10-1-Q01",
+      "explanation": "평균/최빈값 대체는 데이터 손실은 없지만 분포 왜곡이나 편향을 유발할 수 있다."
+    },
+    {
+      "qid": "10-1-Q02",
+      "explanation": "Gradient Boosting은 약한 학습기를 순차적으로 학습시켜 성능을 개선한다."
+    },
+    {
+      "qid": "10-1-Q03",
+      "explanation": "이전 모델의 잔차(residual)를 반복적으로 학습한다."
+    },
+    {
+      "qid": "10-1-Q04",
+      "explanation": "경사하강법은 손실함수를 최소화하는 방향으로 파라미터를 업데이트한다."
+    },
+    {
+      "qid": "10-1-Q05",
+      "explanation": "XGBoost는 조기 종료(Early Stopping)를 지원한다."
+    },
+    {
+      "qid": "10-1-Q06",
+      "explanation": "반복 학습의 목적은 이전 모델의 오류를 점진적으로 줄이는 것이다."
+    },
+    {
+      "qid": "10-1-Q07",
+      "explanation": "정규화가 너무 강하면 모델이 지나치게 단순해져 과소적합이 발생한다."
+    },
+    {
+      "qid": "10-1-Q08",
+      "explanation": "정규화, 병렬 학습, 빠른 학습 속도가 결합되어 Kaggle에서 널리 사용되었다."
+    },
+    {
+      "qid": "10-1-Q09",
+      "explanation": "Gradient Boosting은 손실함수의 기울기 정보를 사용해 모델을 업데이트한다."
+    },
+    {
+      "qid": "10-1-Q10",
+      "explanation": "예시: 과적합 감소, 빠른 학습 속도, 결측값 자동 처리 등."
+    }
+  ]
+}

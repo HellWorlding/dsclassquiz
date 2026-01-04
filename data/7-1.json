@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "course": "경영데이터과학론심화",
+    "tool": "Orange3",
+    "quiz_id": "7-1",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "qid": "7-1-Q01",
+      "type": "mcq",
+      "prompt": "Type 1 Error(Type I Error)에 대한 설명으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "실제 양성을 음성으로 예측한 경우" },
+        { "cid": "B", "text": "실제 음성을 양성으로 예측한 경우" },
+        { "cid": "C", "text": "실제 음성과 양성이 모두 맞은 경우" },
+        { "cid": "D", "text": "모델이 학습되지 않은 경우" }
+      ]
+    },
+    {
+      "qid": "7-1-Q02",
+      "type": "mcq",
+      "prompt": "심장병 진단 예시에서 Type 2 Error(Type II Error)가 특히 위험한 이유는?",
+      "choices": [
+        { "cid": "A", "text": "불필요한 검사 비용이 증가하기 때문" },
+        { "cid": "B", "text": "모델 학습 시간이 길어지기 때문" },
+        { "cid": "C", "text": "실제 환자를 정상으로 판단해 치료 시기를 놓칠 수 있기 때문" },
+        { "cid": "D", "text": "데이터 수가 부족해지기 때문" }
+      ]
+    },
+    {
+      "qid": "7-1-Q03",
+      "type": "mcq",
+      "prompt": "앙상블(Ensemble) 기법에 대한 설명으로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "하나의 모델을 최대한 복잡하게 만드는 방법" },
+        { "cid": "B", "text": "여러 모델을 조합해 하나의 강력한 모델을 만드는 방법" },
+        { "cid": "C", "text": "비지도학습 전용 기법" },
+        { "cid": "D", "text": "오직 딥러닝에서만 사용되는 방법" }
+      ]
+    },
+    {
+      "qid": "7-1-Q04",
+      "type": "mcq",
+      "prompt": "Random Forest가 사용하는 앙상블 방식은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "Boosting" },
+        { "cid": "B", "text": "Stacking" },
+        { "cid": "C", "text": "Bagging" },
+        { "cid": "D", "text": "Regularization" }
+      ]
+    },
+    {
+      "qid": "7-1-Q05",
+      "type": "mcq",
+      "prompt": "Bagging(Bootstrap Aggregating)의 핵심 과정으로 옳지 않은 것은?",
+      "choices": [
+        { "cid": "A", "text": "데이터를 복원추출하여 여러 샘플 생성" },
+        { "cid": "B", "text": "각 샘플로 개별 모델 학습" },
+        { "cid": "C", "text": "학습된 모델 결과를 평균 또는 투표로 결합" },
+        { "cid": "D", "text": "이전 모델의 오차에 가중치를 부여해 학습" }
+      ]
+    },
+    {
+      "qid": "7-1-Q06",
+      "type": "mcq",
+      "prompt": "Feature 개수가 많아질수록 Decision Tree가 가지는 문제점으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "모델이 단순해짐" },
+        { "cid": "B", "text": "과적합이 줄어듦" },
+        { "cid": "C", "text": "작은 데이터 변화에도 구조가 크게 변함" },
+        { "cid": "D", "text": "해석이 쉬워짐" }
+      ]
+    },
+    {
+      "qid": "7-1-Q07",
+      "type": "mcq",
+      "prompt": "Random Forest가 과적합을 완화할 수 있는 이유로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "하나의 깊은 트리를 사용하기 때문" },
+        { "cid": "B", "text": "모든 feature를 항상 사용하기 때문" },
+        { "cid": "C", "text": "서로 다른 데이터와 feature로 여러 트리를 학습하기 때문" },
+        { "cid": "D", "text": "학습 데이터를 줄이기 때문" }
+      ]
+    },
+    {
+      "qid": "7-1-Q08",
+      "type": "mcq",
+      "prompt": "다음 중 Decision Tree의 장점으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "데이터 스케일링이 반드시 필요하다" },
+        { "cid": "B", "text": "모델 구조를 사람이 직관적으로 이해하기 어렵다" },
+        { "cid": "C", "text": "특성 중요도를 파악할 수 있다" },
+        { "cid": "D", "text": "비선형 데이터에 항상 강하다" }
+      ]
+    },
+    {
+      "qid": "7-1-Q09",
+      "type": "mcq",
+      "prompt": "Bootstrap Aggregating을 줄여서 부르는 앙상블 기법의 이름은?",
+      "choices": [
+        { "cid": "A", "text": "Boosting" },
+        { "cid": "B", "text": "Bagging" },
+        { "cid": "C", "text": "Stacking" },
+        { "cid": "D", "text": "Pruning" }
+      ]
+    },
+    {
+      "qid": "7-1-Q10",
+      "type": "mcq",
+      "prompt": "과적합(overfitting)에 대한 설명으로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "학습 데이터와 실제 데이터 모두에서 성능이 높다" },
+        { "cid": "B", "text": "모델이 너무 단순해서 발생한다" },
+        { "cid": "C", "text": "학습 데이터에는 강하지만 새로운 데이터에 약하다" },
+        { "cid": "D", "text": "데이터 수가 많을수록 항상 발생한다" }
+      ]
+    },
+    {
+      "qid": "7-1-Q11",
+      "type": "mcq",
+      "prompt": "의료 진단 AI 모델을 설계할 때 Type 2 Error를 더 줄여야 하는 이유로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "Type 2 Error는 모델 정확도를 떨어뜨리기 때문이다" },
+        { "cid": "B", "text": "Type 1 Error는 항상 비용이 더 크기 때문이다" },
+        { "cid": "C", "text": "실제 환자를 놓치면 생명에 치명적인 영향을 줄 수 있기 때문이다" },
+        { "cid": "D", "text": "Type 2 Error는 데이터 수가 많을수록 증가하기 때문이다" }
+      ]
+    },
+    {
+      "qid": "7-1-Q12",
+      "type": "mcq",
+      "prompt": "Random Forest가 Decision Tree보다 과적합(overfitting)에 강한 이유를 가장 정확히 설명한 것은?",
+      "choices": [
+        { "cid": "A", "text": "트리의 깊이를 항상 얕게 유지하기 때문이다" },
+        { "cid": "B", "text": "모든 트리가 동일한 feature를 사용하기 때문이다" },
+        { "cid": "C", "text": "서로 다른 데이터 샘플과 feature 조합으로 여러 트리를 학습하기 때문이다" },
+        { "cid": "D", "text": "가지치기를 전혀 수행하지 않기 때문이다" }
+      ]
+    }
+  ],
+  "answers": [
+    { "qid": "7-1-Q01", "correct": "B" },
+    { "qid": "7-1-Q02", "correct": "C" },
+    { "qid": "7-1-Q03", "correct": "B" },
+    { "qid": "7-1-Q04", "correct": "C" },
+    { "qid": "7-1-Q05", "correct": "D" },
+    { "qid": "7-1-Q06", "correct": "C" },
+    { "qid": "7-1-Q07", "correct": "C" },
+    { "qid": "7-1-Q08", "correct": "C" },
+    { "qid": "7-1-Q09", "correct": "B" },
+    { "qid": "7-1-Q10", "correct": "C" },
+    { "qid": "7-1-Q11", "correct": "C" },
+    { "qid": "7-1-Q12", "correct": "C" }
+  ],
+  "explanations": [
+    {
+      "qid": "7-1-Q01",
+      "explanation": "Type 1 Error는 False Positive로, 실제는 음성인데 양성이라고 잘못 예측한 경우이다."
+    },
+    {
+      "qid": "7-1-Q02",
+      "explanation": "Type 2 Error(False Negative)는 실제 환자를 정상으로 판단해 치료 시기를 놓칠 수 있어 치명적이다."
+    },
+    {
+      "qid": "7-1-Q03",
+      "explanation": "앙상블 기법은 여러 모델을 결합해 단일 모델보다 더 강력하고 안정적인 예측 성능을 얻는 방법이다."
+    },
+    {
+      "qid": "7-1-Q04",
+      "explanation": "Random Forest는 Bagging 기반 앙상블 기법으로 여러 Decision Tree를 병렬 학습한다."
+    },
+    {
+      "qid": "7-1-Q05",
+      "explanation": "이전 모델의 오차에 가중치를 부여하는 방식은 Boosting의 특징이다."
+    },
+    {
+      "qid": "7-1-Q06",
+      "explanation": "Decision Tree는 feature 수가 많아질수록 데이터 변동에 민감해지는 고분산 문제가 발생한다."
+    },
+    {
+      "qid": "7-1-Q07",
+      "explanation": "Random Forest는 서로 다른 데이터와 feature로 여러 트리를 학습해 과적합을 완화한다."
+    },
+    {
+      "qid": "7-1-Q08",
+      "explanation": "Decision Tree는 분기 구조를 통해 특성 중요도를 파악할 수 있다는 장점이 있다."
+    },
+    {
+      "qid": "7-1-Q09",
+      "explanation": "Bootstrap Aggregating을 줄여서 Bagging이라고 부른다."
+    },
+    {
+      "qid": "7-1-Q10",
+      "explanation": "과적합은 학습 데이터에는 강하지만 새로운 데이터에 대한 일반화 성능이 낮은 상태이다."
+    },
+    {
+      "qid": "7-1-Q11",
+      "explanation": "의료 분야에서는 실제 환자를 놓치는 오류(Type 2 Error)가 생명에 치명적인 영향을 줄 수 있다."
+    },
+    {
+      "qid": "7-1-Q12",
+      "explanation": "Random Forest는 Bagging과 feature 무작위성으로 개별 트리의 불안정을 줄여 과적합에 강하다."
+    }
+  ]
+}

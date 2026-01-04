@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "course": "경영데이터과학론심화",
+    "tool": "Orange3",
+    "quiz_id": "9-2",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "qid": "9-2-Q01",
+      "type": "mcq",
+      "prompt": "강의에서 모델의 Quality(품질)를 측정하는 방법으로 제시된 것이 아닌 것은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "정확도(Accuracy)" },
+        { "cid": "B", "text": "Confusion Matrix" },
+        { "cid": "C", "text": "Permutation Plot" },
+        { "cid": "D", "text": "ROC Curve" }
+      ]
+    },
+    {
+      "qid": "9-2-Q02",
+      "type": "mcq",
+      "prompt": "Permutation Plot에서 사용되는 핵심 통계량은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "피어슨 상관계수" },
+        { "cid": "B", "text": "스피어만 순위 상관계수" },
+        { "cid": "C", "text": "결정계수(R²)" },
+        { "cid": "D", "text": "엔트로피" }
+      ]
+    },
+    {
+      "qid": "9-2-Q03",
+      "type": "mcq",
+      "prompt": "Permutation Plot에서 값이 1에 가까울수록 의미하는 바는 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "모델이 완전히 무작위임" },
+        { "cid": "B", "text": "target이 완전히 섞였음" },
+        { "cid": "C", "text": "순열된 target과 원래 target의 순서가 매우 유사함" },
+        { "cid": "D", "text": "모델 성능이 매우 낮음" }
+      ]
+    },
+    {
+      "qid": "9-2-Q04",
+      "type": "mcq",
+      "prompt": "Calibration Plot을 통해 주로 판단하려는 것은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "모델의 계산 속도" },
+        { "cid": "B", "text": "모델의 과적합 여부" },
+        { "cid": "C", "text": "모델의 신뢰성(reliability)과 과신(overconfidence) 여부" },
+        { "cid": "D", "text": "feature 중요도" }
+      ]
+    },
+    {
+      "qid": "9-2-Q05",
+      "type": "mcq",
+      "prompt": "Preprocess 위젯에서 결측값 처리 방법 중 수치형은 평균, 범주형은 최빈값으로 대체하는 방식의 설명으로 옳은 것은?",
+      "choices": [
+        { "cid": "A", "text": "데이터 손실은 없으나 분포 왜곡 가능성이 있다" },
+        { "cid": "B", "text": "항상 가장 좋은 방법이다" },
+        { "cid": "C", "text": "재현성이 매우 높다" },
+        { "cid": "D", "text": "결측값이 많은 경우에만 사용한다" }
+      ]
+    },
+    {
+      "qid": "9-2-Q06",
+      "type": "mcq",
+      "prompt": "타깃 변수를 무작위로 섞어 원래 타깃과의 상관관계를 시각화하여 과적합을 검사하는 도구는?",
+      "choices": [
+        { "cid": "A", "text": "Confusion Matrix" },
+        { "cid": "B", "text": "Calibration Plot" },
+        { "cid": "C", "text": "Permutation Plot" },
+        { "cid": "D", "text": "Data Sampler" }
+      ]
+    },
+    {
+      "qid": "9-2-Q07",
+      "type": "mcq",
+      "prompt": "Permutation Plot의 목적에 가장 부합하는 설명은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "feature 간 상관관계를 분석한다" },
+        { "cid": "B", "text": "모델의 예측 확률 분포를 시각화한다" },
+        { "cid": "C", "text": "target을 무작위로 섞었을 때 모델의 과적합 여부를 점검한다" },
+        { "cid": "D", "text": "모델의 정확도를 직접 계산한다" }
+      ]
+    },
+    {
+      "qid": "9-2-Q08",
+      "type": "mcq",
+      "prompt": "'Formula' 위젯을 사용하여 새로운 사례(case) 변수를 생성할 때 사용한 파이썬 기반의 조건문 문법 형식은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "if 조건: 값1 else: 값2" },
+        { "cid": "B", "text": "값(참) if 조건 else 값(거짓)" },
+        { "cid": "C", "text": "case(조건, 값1, 값2)" },
+        { "cid": "D", "text": "switch(조건) { case ... }" }
+      ]
+    },
+    {
+      "qid": "9-2-Q09",
+      "type": "mcq",
+      "prompt": "모델의 설명력을 나타내는 지표(전체 변동성 중 설명 비율)는?",
+      "choices": [
+        { "cid": "A", "text": "MSE (Mean Squared Error)" },
+        { "cid": "B", "text": "상관계수 (Correlation)" },
+        { "cid": "C", "text": "결정계수 (R²)" },
+        { "cid": "D", "text": "기울기 (Slope)" }
+      ]
+    },
+    {
+      "qid": "9-2-Q10",
+      "type": "mcq",
+      "prompt": "의사결정나무(DT)의 단점으로, 데이터의 작은 변화에도 트리 구조가 크게 달라지는 특성은?",
+      "choices": [
+        { "cid": "A", "text": "비선형성" },
+        { "cid": "B", "text": "데이터 변동 민감성" },
+        { "cid": "C", "text": "과소적합" },
+        { "cid": "D", "text": "간단한 구현" }
+      ]
+    }
+  ],
+  "answers": [
+    { "qid": "9-2-Q01", "correct": "D" },
+    { "qid": "9-2-Q02", "correct": "B" },
+    { "qid": "9-2-Q03", "correct": "C" },
+    { "qid": "9-2-Q04", "correct": "C" },
+    { "qid": "9-2-Q05", "correct": "A" },
+    { "qid": "9-2-Q06", "correct": "C" },
+    { "qid": "9-2-Q07", "correct": "C" },
+    { "qid": "9-2-Q08", "correct": "B" },
+    { "qid": "9-2-Q09", "correct": "C" },
+    { "qid": "9-2-Q10", "correct": "B" }
+  ],
+  "explanations": [
+    {
+      "qid": "9-2-Q01",
+      "explanation": "강의에서는 Accuracy, Confusion Matrix, Permutation Plot, Calibration Plot만을 품질 지표로 다뤘다."
+    },
+    {
+      "qid": "9-2-Q02",
+      "explanation": "Permutation Plot은 순열된 타깃과 원래 타깃 간의 스피어만 순위 상관계수를 사용한다."
+    },
+    {
+      "qid": "9-2-Q03",
+      "explanation": "값이 1에 가까울수록 순열 전후 타깃의 순서가 유사함을 의미한다."
+    },
+    {
+      "qid": "9-2-Q04",
+      "explanation": "Calibration Plot은 예측 확률이 실제 정답률과 얼마나 일치하는지를 통해 신뢰성과 과신 여부를 판단한다."
+    },
+    {
+      "qid": "9-2-Q05",
+      "explanation": "평균·최빈값 대체는 데이터 손실은 없지만 분포 왜곡이나 편향을 유발할 수 있다."
+    },
+    {
+      "qid": "9-2-Q06",
+      "explanation": "Permutation Plot은 타깃을 무작위로 섞어 모델의 과적합 여부를 점검한다."
+    },
+    {
+      "qid": "9-2-Q07",
+      "explanation": "타깃을 섞었을 때도 성능이 유지되면 과적합 가능성을 의심해야 한다."
+    },
+    {
+      "qid": "9-2-Q08",
+      "explanation": "Orange3 Formula 위젯은 파이썬 삼항 연산자 문법을 사용한다."
+    },
+    {
+      "qid": "9-2-Q09",
+      "explanation": "결정계수(R²)는 전체 변동성 중 모델이 설명하는 비율을 의미한다."
+    },
+    {
+      "qid": "9-2-Q10",
+      "explanation": "의사결정나무는 데이터 변화에 민감해 구조가 크게 달라질 수 있다."
+    }
+  ]
+}

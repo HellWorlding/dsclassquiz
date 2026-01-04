@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>경영데이터과학론심화 퀴즈</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <button id="settings-btn" class="icon-btn" title="설정">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+                <h1>경영데이터과학론심화 퀴즈</h1>
+                <button id="dark-mode-btn" class="icon-btn" title="다크모드">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+            <p class="subtitle">Orange3 기반 데이터 분석 학습</p>
+        </header>
+
+        <!-- 메인 네비게이션 -->
+        <nav id="main-nav" class="main-nav">
+            <button class="nav-btn active" data-screen="range-selection">퀴즈</button>
+            <button class="nav-btn" data-screen="wrong-note">
+                오답노트
+                <span class="wrong-count-badge" id="nav-wrong-count" style="display:none;">0</span>
+            </button>
+        </nav>
+
+        <!-- 범위 선택 화면 -->
+        <section id="range-selection" class="screen active">
+            <h2>퀴즈 범위 선택</h2>
+            <p class="instruction">풀고 싶은 범위를 선택하세요 (복수 선택 가능)</p>
+
+            <div class="range-options">
+                <label class="range-item">
+                    <input type="checkbox" value="6-2" data-count="10" data-mcq-count="10">
+                    <span class="checkmark"></span>
+                    <span class="range-label">6-2</span>
+                    <span class="range-count">10문제</span>
+                </label>
+                <label class="range-item">
+                    <input type="checkbox" value="7-1" data-count="12" data-mcq-count="12">
+                    <span class="checkmark"></span>
+                    <span class="range-label">7-1</span>
+                    <span class="range-count">12문제</span>
+                </label>
+                <label class="range-item">
+                    <input type="checkbox" value="9-1" data-count="10" data-mcq-count="10">
+                    <span class="checkmark"></span>
+                    <span class="range-label">9-1</span>
+                    <span class="range-count">10문제</span>
+                </label>
+                <label class="range-item">
+                    <input type="checkbox" value="9-2" data-count="10" data-mcq-count="10">
+                    <span class="checkmark"></span>
+                    <span class="range-label">9-2</span>
+                    <span class="range-count">10문제</span>
+                </label>
+                <label class="range-item">
+                    <input type="checkbox" value="10-1" data-count="10" data-mcq-count="8">
+                    <span class="checkmark"></span>
+                    <span class="range-label">10-1</span>
+                    <span class="range-count">10문제</span>
+                </label>
+                <label class="range-item">
+                    <input type="checkbox" value="10-2" data-count="10" data-mcq-count="8">
+                    <span class="checkmark"></span>
+                    <span class="range-label">10-2</span>
+                    <span class="range-count">10문제</span>
+                </label>
+                <label class="range-item">
+                    <input type="checkbox" value="11-1" data-count="10" data-mcq-count="8">
+                    <span class="checkmark"></span>
+                    <span class="range-label">11-1</span>
+                    <span class="range-count">10문제</span>
+                </label>
+            </div>
+
+            <div class="selection-summary">
+                <span>선택된 문제: <strong id="total-questions">0</strong>문제</span>
+            </div>
+
+            <div class="options-group">
+                <label class="option-item">
+                    <input type="checkbox" id="shuffle-option" checked>
+                    <span>문제 순서 섞기</span>
+                </label>
+                <label class="option-item">
+                    <input type="checkbox" id="mcq-only-option">
+                    <span>객관식만 풀기</span>
+                </label>
+            </div>
+
+            <button id="start-btn" class="btn btn-primary" disabled>퀴즈 시작</button>
+        </section>
+
+        <!-- 오답노트 화면 -->
+        <section id="wrong-note" class="screen">
+            <div class="wrong-note-header">
+                <h2>오답노트</h2>
+                <span class="wrong-note-count">총 <strong id="wrong-note-total">0</strong>문제</span>
+            </div>
+
+            <div class="wrong-note-controls">
+                <div class="filter-group">
+                    <label>범위:</label>
+                    <select id="wrong-filter-range">
+                        <option value="all">전체</option>
+                        <option value="6-2">6-2</option>
+                        <option value="7-1">7-1</option>
+                        <option value="9-1">9-1</option>
+                        <option value="9-2">9-2</option>
+                        <option value="10-1">10-1</option>
+                        <option value="10-2">10-2</option>
+                        <option value="11-1">11-1</option>
+                    </select>
+                </div>
+                <div class="sort-group">
+                    <label>정렬:</label>
+                    <select id="wrong-sort">
+                        <option value="recent">최근 틀린 순</option>
+                        <option value="count">많이 틀린 순</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="wrong-note-list" class="wrong-note-list">
+                <div class="empty-state" id="wrong-note-empty">
+                    <p>아직 틀린 문제가 없습니다.</p>
+                    <p>퀴즈를 풀어보세요!</p>
+                </div>
+            </div>
+
+            <div class="wrong-note-actions" id="wrong-note-actions" style="display:none;">
+                <button id="download-wrong-btn" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    오답 내역 다운로드
+                </button>
+                <button id="study-wrong-btn" class="btn btn-primary">오답 전체 풀기</button>
+                <button id="clear-wrong-btn" class="btn btn-danger">오답 초기화</button>
+            </div>
+        </section>
+
+        <!-- 퀴즈 화면 -->
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-top-bar">
+                <button id="quit-btn" class="icon-btn quit-btn" title="그만두기">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="question-nav" id="question-nav"></div>
+                <span id="quiz-mode-badge" class="quiz-mode-badge" style="display:none;">오답 복습</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="quiz-header">
+                <span id="question-counter">1 / 10</span>
+                <span id="score-display">정답: 0</span>
+            </div>
+
+            <div class="question-container" id="question-container">
+                <div class="question-meta">
+                    <span class="question-range-tag" id="question-range-tag">6-2</span>
+                    <span class="question-type-badge" id="question-type-badge">객관식</span>
+                </div>
+                <p class="question-prompt" id="question-prompt"></p>
+
+                <div id="choices-container" class="choices-container"></div>
+
+                <div id="short-answer-container" class="short-answer-container" style="display:none;">
+                    <input type="text" id="short-answer-input" placeholder="답을 입력하세요">
+                    <button id="submit-short-btn" class="btn btn-secondary">제출</button>
+                </div>
+
+                <div id="essay-container" class="essay-container" style="display:none;">
+                    <p class="essay-notice">서술형 문제입니다. 스스로 답을 생각해보세요.</p>
+                    <button id="show-essay-btn" class="btn btn-secondary">해설 보기</button>
+                </div>
+            </div>
+
+            <div id="feedback-container" class="feedback-container" style="display:none;">
+                <div class="feedback-result" id="feedback-result"></div>
+                <div class="explanation" id="explanation"></div>
+                <button id="next-btn" class="btn btn-primary">다음 문제</button>
+            </div>
+        </section>
+
+        <!-- 결과 화면 -->
+        <section id="result-screen" class="screen">
+            <h2>퀴즈 완료!</h2>
+            <div class="result-summary">
+                <div class="result-score">
+                    <span class="score-value" id="final-score">0</span>
+                    <span class="score-total">/ <span id="final-total">0</span></span>
+                </div>
+                <p class="result-percentage" id="result-percentage">0%</p>
+            </div>
+
+            <div class="result-details">
+                <h3>범위별 결과</h3>
+                <div id="range-results"></div>
+            </div>
+
+            <div class="review-section">
+                <h3>문제별 결과 <button id="toggle-review-btn" class="toggle-btn">펼치기</button></h3>
+                <div id="review-list" class="review-list" style="display:none;"></div>
+            </div>
+
+            <div class="wrong-answers-section" id="wrong-answers-section" style="display:none;">
+                <h3>이번 퀴즈 오답</h3>
+                <div id="wrong-answers-list"></div>
+            </div>
+
+            <div class="result-actions">
+                <button id="retry-wrong-btn" class="btn btn-warning" style="display:none;">오답만 다시 풀기</button>
+                <button id="retry-btn" class="btn btn-secondary">다시 풀기</button>
+                <button id="home-btn" class="btn btn-primary">처음으로</button>
+            </div>
+        </section>
+
+        <!-- 설정 모달 -->
+        <div id="settings-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>설정</h3>
+                    <button class="modal-close" id="settings-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <h4>데이터 관리</h4>
+                        <div class="settings-buttons">
+                            <button id="export-data-btn" class="btn btn-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                데이터 내보내기
+                            </button>
+                            <label class="btn btn-secondary file-input-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="17 8 12 3 7 8"></polyline>
+                                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                                </svg>
+                                데이터 가져오기
+                                <input type="file" id="import-data-input" accept=".json" style="display:none;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings-section danger-zone">
+                        <h4>위험 영역</h4>
+                        <button id="reset-all-btn" class="btn btn-danger">모든 데이터 초기화</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 확인 모달 -->
+        <div id="confirm-modal" class="modal">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <h3 id="confirm-title">확인</h3>
+                </div>
+                <div class="modal-body">
+                    <p id="confirm-message">정말 진행하시겠습니까?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="confirm-cancel" class="btn btn-secondary">취소</button>
+                    <button id="confirm-ok" class="btn btn-danger">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

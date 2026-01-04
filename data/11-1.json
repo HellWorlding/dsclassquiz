@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "course": "경영데이터과학론심화",
+    "tool": "Orange3",
+    "quiz_id": "11-1",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "qid": "11-1-Q01",
+      "type": "mcq",
+      "prompt": "다음 중 Logistic Regression 모델에 대한 설명으로 가장 옳은 것은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "회귀 모델이므로 출력값은 항상 연속형이다" },
+        { "cid": "B", "text": "이진 분류 문제에서 각 클래스에 속할 확률을 추정한다" },
+        { "cid": "C", "text": "종속변수가 연속형일 때만 사용할 수 있다" },
+        { "cid": "D", "text": "과적합 문제가 발생하지 않는다" }
+      ]
+    },
+    {
+      "qid": "11-1-Q02",
+      "type": "mcq",
+      "prompt": "다음 중 이진 분류(binary classification) 문제의 예로 가장 적절한 것은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "주택 가격 예측" },
+        { "cid": "B", "text": "고객의 연간 구매 금액 예측" },
+        { "cid": "C", "text": "이메일이 스팸인지 아닌지 판단" },
+        { "cid": "D", "text": "매출 증가율 계산" }
+      ]
+    },
+    {
+      "qid": "11-1-Q03",
+      "type": "mcq",
+      "prompt": "다음 중 Sigmoid 함수의 출력값 범위로 옳은 것은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "-1 ~ 1" },
+        { "cid": "B", "text": "0 ~ 1" },
+        { "cid": "C", "text": "-∞ ~ +∞" },
+        { "cid": "D", "text": "0 또는 1" }
+      ]
+    },
+    {
+      "qid": "11-1-Q04",
+      "type": "mcq",
+      "prompt": "Sigmoid 함수가 Logistic Regression에서 사용되는 가장 중요한 이유는 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "입력값의 범위를 -1에서 1로 제한하기 위해" },
+        { "cid": "B", "text": "선형 회귀의 계산 속도를 높이기 위해" },
+        { "cid": "C", "text": "출력값을 0과 1 사이의 확률로 변환하기 위해" },
+        { "cid": "D", "text": "독립변수 간의 상관관계를 제거하기 위해" }
+      ]
+    },
+    {
+      "qid": "11-1-Q05",
+      "type": "mcq",
+      "prompt": "Logistic Regression에서 선형 결합으로 계산되는 값 z의 역할로 가장 적절한 것은?",
+      "choices": [
+        { "cid": "A", "text": "최종 클래스 예측 결과이다" },
+        { "cid": "B", "text": "Sigmoid 함수에 입력되는 값이다" },
+        { "cid": "C", "text": "분류 정확도를 의미한다" },
+        { "cid": "D", "text": "독립변수의 개수를 의미한다" }
+      ]
+    },
+    {
+      "qid": "11-1-Q06",
+      "type": "mcq",
+      "prompt": "Orange3에서 Logistic Regression 모델의 기본(default) 정규화 방식은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "L1 (Lasso)" },
+        { "cid": "B", "text": "L2 (Ridge)" },
+        { "cid": "C", "text": "Elastic Net" },
+        { "cid": "D", "text": "정규화를 적용하지 않는다" }
+      ]
+    },
+    {
+      "qid": "11-1-Q07",
+      "type": "mcq",
+      "prompt": "다음 중 L1(Lasso) 정규화의 특징으로 옳은 것은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "모든 변수의 계수를 동일한 비율로 줄인다" },
+        { "cid": "B", "text": "중요하지 않은 변수의 계수를 0으로 만들 수 있다" },
+        { "cid": "C", "text": "모든 변수를 반드시 모델에 포함시킨다" },
+        { "cid": "D", "text": "변수가 많을수록 모델이 불안정해진다" }
+      ]
+    },
+    {
+      "qid": "11-1-Q08",
+      "type": "mcq",
+      "prompt": "Orange3의 Test & Score 위젯의 주된 목적은 무엇인가?",
+      "choices": [
+        { "cid": "A", "text": "데이터를 시각화하기 위해" },
+        { "cid": "B", "text": "모델의 하이퍼파라미터를 자동 조정하기 위해" },
+        { "cid": "C", "text": "여러 모델의 분류 성능을 비교·평가하기 위해" },
+        { "cid": "D", "text": "결측치를 자동으로 제거하기 위해" }
+      ]
+    },
+    {
+      "qid": "11-1-Q09",
+      "type": "short",
+      "prompt": "Logistic Regression에서 클래스 분류를 나누는 일반적인 확률 기준값(threshold)은 얼마인가?"
+    },
+    {
+      "qid": "11-1-Q10",
+      "type": "short",
+      "prompt": "Orange3의 Logistic Regression 모델이 과적합을 줄이기 위해 사용하는 기법의 이름은 무엇인가?"
+    }
+  ],
+  "answers": [
+    { "qid": "11-1-Q01", "correct": "B" },
+    { "qid": "11-1-Q02", "correct": "C" },
+    { "qid": "11-1-Q03", "correct": "B" },
+    { "qid": "11-1-Q04", "correct": "C" },
+    { "qid": "11-1-Q05", "correct": "B" },
+    { "qid": "11-1-Q06", "correct": "B" },
+    { "qid": "11-1-Q07", "correct": "B" },
+    { "qid": "11-1-Q08", "correct": "C" },
+    { "qid": "11-1-Q09", "correct": ["0.5"] },
+    { "qid": "11-1-Q10", "correct": ["정규화", "Regularization"] }
+  ],
+  "explanations": [
+    {
+      "qid": "11-1-Q01",
+      "explanation": "Logistic Regression은 이진 분류 문제에서 각 클래스에 속할 확률을 추정하는 모델이다."
+    },
+    {
+      "qid": "11-1-Q02",
+      "explanation": "결과가 두 가지 중 하나로 나뉘는 문제는 이진 분류에 해당한다."
+    },
+    {
+      "qid": "11-1-Q03",
+      "explanation": "Sigmoid 함수는 어떤 입력값이든 0과 1 사이의 값으로 변환한다."
+    },
+    {
+      "qid": "11-1-Q04",
+      "explanation": "Sigmoid 함수는 선형 결합 결과를 확률로 해석 가능하게 만든다."
+    },
+    {
+      "qid": "11-1-Q05",
+      "explanation": "z는 독립변수들의 선형 결합 결과로 Sigmoid 함수의 입력값이다."
+    },
+    {
+      "qid": "11-1-Q06",
+      "explanation": "Orange3의 Logistic Regression은 기본적으로 L2 정규화를 사용한다."
+    },
+    {
+      "qid": "11-1-Q07",
+      "explanation": "L1 정규화는 중요하지 않은 변수의 계수를 0으로 만들어 변수 선택 효과를 가진다."
+    },
+    {
+      "qid": "11-1-Q08",
+      "explanation": "Test & Score 위젯은 여러 모델의 성능을 동일 조건에서 비교·평가하는 도구이다."
+    },
+    {
+      "qid": "11-1-Q09",
+      "explanation": "예측 확률이 0.5 이상이면 1, 미만이면 0으로 분류한다."
+    },
+    {
+      "qid": "11-1-Q10",
+      "explanation": "정규화는 모델 계수를 제한하여 과적합을 줄이고 예측을 안정화한다."
+    }
+  ]
+}
