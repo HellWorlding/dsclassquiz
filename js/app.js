@@ -60,6 +60,7 @@ class QuizApp {
         document.getElementById('retry-btn').addEventListener('click', () => this.retryQuiz());
         document.getElementById('retry-wrong-btn').addEventListener('click', () => this.retryWrongOnly());
         document.getElementById('home-btn').addEventListener('click', () => this.goHome());
+        document.getElementById('export-result-btn').addEventListener('click', () => this.downloadWrongAnswers());
 
         // 오답노트 필터/정렬
         document.getElementById('wrong-filter-range').addEventListener('change', () => this.renderWrongNoteList());
