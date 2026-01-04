@@ -9,6 +9,7 @@
     {
       "qid": "7-1-Q01",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Type 1 Error(Type I Error)에 대한 설명으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "실제 양성을 음성으로 예측한 경우" },
@@ -20,6 +21,7 @@
     {
       "qid": "7-1-Q02",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "심장병 진단 예시에서 Type 2 Error(Type II Error)가 특히 위험한 이유는?",
       "choices": [
         { "cid": "A", "text": "불필요한 검사 비용이 증가하기 때문" },
@@ -31,6 +33,7 @@
     {
       "qid": "7-1-Q03",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "앙상블(Ensemble) 기법에 대한 설명으로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "하나의 모델을 최대한 복잡하게 만드는 방법" },
@@ -42,6 +45,7 @@
     {
       "qid": "7-1-Q04",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "Random Forest가 사용하는 앙상블 방식은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "Boosting" },
@@ -53,6 +57,7 @@
     {
       "qid": "7-1-Q05",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "Bagging(Bootstrap Aggregating)의 핵심 과정으로 옳지 않은 것은?",
       "choices": [
         { "cid": "A", "text": "데이터를 복원추출하여 여러 샘플 생성" },
@@ -64,6 +69,7 @@
     {
       "qid": "7-1-Q06",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Feature 개수가 많아질수록 Decision Tree가 가지는 문제점으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "모델이 단순해짐" },
@@ -75,6 +81,7 @@
     {
       "qid": "7-1-Q07",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Random Forest가 과적합을 완화할 수 있는 이유로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "하나의 깊은 트리를 사용하기 때문" },
@@ -86,6 +93,7 @@
     {
       "qid": "7-1-Q08",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "다음 중 Decision Tree의 장점으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "데이터 스케일링이 반드시 필요하다" },
@@ -97,6 +105,7 @@
     {
       "qid": "7-1-Q09",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "Bootstrap Aggregating을 줄여서 부르는 앙상블 기법의 이름은?",
       "choices": [
         { "cid": "A", "text": "Boosting" },
@@ -108,6 +117,7 @@
     {
       "qid": "7-1-Q10",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "과적합(overfitting)에 대한 설명으로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "학습 데이터와 실제 데이터 모두에서 성능이 높다" },
@@ -119,6 +129,7 @@
     {
       "qid": "7-1-Q11",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "의료 진단 AI 모델을 설계할 때 Type 2 Error를 더 줄여야 하는 이유로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "Type 2 Error는 모델 정확도를 떨어뜨리기 때문이다" },
@@ -130,6 +141,7 @@
     {
       "qid": "7-1-Q12",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Random Forest가 Decision Tree보다 과적합(overfitting)에 강한 이유를 가장 정확히 설명한 것은?",
       "choices": [
         { "cid": "A", "text": "트리의 깊이를 항상 얕게 유지하기 때문이다" },

@@ -9,6 +9,7 @@
     {
       "qid": "9-2-Q01",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "강의에서 모델의 Quality(품질)를 측정하는 방법으로 제시된 것이 아닌 것은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "정확도(Accuracy)" },
@@ -20,6 +21,7 @@
     {
       "qid": "9-2-Q02",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "Permutation Plot에서 사용되는 핵심 통계량은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "피어슨 상관계수" },
@@ -31,6 +33,7 @@
     {
       "qid": "9-2-Q03",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "Permutation Plot에서 값이 1에 가까울수록 의미하는 바는 무엇인가?",
       "choices": [
         { "cid": "A", "text": "모델이 완전히 무작위임" },
@@ -42,6 +45,7 @@
     {
       "qid": "9-2-Q04",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Calibration Plot을 통해 주로 판단하려는 것은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "모델의 계산 속도" },
@@ -53,6 +57,7 @@
     {
       "qid": "9-2-Q05",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Preprocess 위젯에서 결측값 처리 방법 중 수치형은 평균, 범주형은 최빈값으로 대체하는 방식의 설명으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "데이터 손실은 없으나 분포 왜곡 가능성이 있다" },
@@ -64,6 +69,7 @@
     {
       "qid": "9-2-Q06",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "타깃 변수를 무작위로 섞어 원래 타깃과의 상관관계를 시각화하여 과적합을 검사하는 도구는?",
       "choices": [
         { "cid": "A", "text": "Confusion Matrix" },
@@ -75,6 +81,7 @@
     {
       "qid": "9-2-Q07",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Permutation Plot의 목적에 가장 부합하는 설명은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "feature 간 상관관계를 분석한다" },
@@ -86,6 +93,7 @@
     {
       "qid": "9-2-Q08",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "'Formula' 위젯을 사용하여 새로운 사례(case) 변수를 생성할 때 사용한 파이썬 기반의 조건문 문법 형식은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "if 조건: 값1 else: 값2" },
@@ -97,6 +105,7 @@
     {
       "qid": "9-2-Q09",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "모델의 설명력을 나타내는 지표(전체 변동성 중 설명 비율)는?",
       "choices": [
         { "cid": "A", "text": "MSE (Mean Squared Error)" },
@@ -108,6 +117,7 @@
     {
       "qid": "9-2-Q10",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "의사결정나무(DT)의 단점으로, 데이터의 작은 변화에도 트리 구조가 크게 달라지는 특성은?",
       "choices": [
         { "cid": "A", "text": "비선형성" },

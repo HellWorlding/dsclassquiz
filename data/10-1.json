@@ -9,6 +9,7 @@
     {
       "qid": "10-1-Q01",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "결측값을 평균/최빈값으로 대체하는 방법의 단점으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "데이터 손실 발생" },
@@ -20,6 +21,7 @@
     {
       "qid": "10-1-Q02",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Gradient Boosting의 기본 개념으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "강한 학습기를 병렬로 학습" },
@@ -31,6 +33,7 @@
     {
       "qid": "10-1-Q03",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Gradient Boosting에서 반복적으로 학습하는 대상은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "입력 변수" },
@@ -42,6 +45,7 @@
     {
       "qid": "10-1-Q04",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "경사하강법(Gradient Descent)에 대한 설명으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "손실값을 최대화하는 방향으로 이동" },
@@ -53,6 +57,7 @@
     {
       "qid": "10-1-Q05",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "XGBoost의 특징으로 옳지 않은 것은?",
       "choices": [
         { "cid": "A", "text": "정규화를 통한 과적합 제어" },
@@ -64,6 +69,7 @@
     {
       "qid": "10-1-Q06",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Gradient Boosting에서 모델을 여러 번 학습하는 주된 목적은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "데이터를 줄이기 위해" },
@@ -75,6 +81,7 @@
     {
       "qid": "10-1-Q07",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "XGBoost에서 Regularization 파라미터(λ, lambda)를 매우 크게 설정했을 때 발생할 수 있는 문제는?",
       "choices": [
         { "cid": "A", "text": "과적합" },
@@ -86,6 +93,7 @@
     {
       "qid": "10-1-Q08",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "XGBoost가 Kaggle 대회에서 널리 사용된 주요 이유로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "구현이 단순해서" },
@@ -97,11 +105,13 @@
     {
       "qid": "10-1-Q09",
       "type": "short",
+      "difficulty": 2,
       "prompt": "Gradient Boosting에서 모델을 업데이트할 때 기준이 되는 값은 무엇인가?"
     },
     {
       "qid": "10-1-Q10",
       "type": "essay",
+      "difficulty": 2,
       "prompt": "XGBoost를 사용하면 좋은 점 한 가지를 서술하시오."
     }
   ],

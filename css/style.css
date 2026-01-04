@@ -529,6 +529,36 @@ header {
     background-color: #9c27b0;
 }
 
+/* 난이도 배지 */
+.difficulty-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.difficulty-badge.easy {
+    background-color: #4caf50;
+    color: white;
+}
+
+.difficulty-badge.medium {
+    background-color: #ff9800;
+    color: white;
+}
+
+.difficulty-badge.hard {
+    background-color: #f44336;
+    color: white;
+}
+
+.difficulty-star {
+    font-size: 0.7rem;
+}
+
 .question-prompt {
     font-size: 1.15rem;
     line-height: 1.7;

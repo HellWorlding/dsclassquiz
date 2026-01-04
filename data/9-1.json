@@ -9,6 +9,7 @@
     {
       "qid": "9-1-Q01",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "선형회귀분석에서 기울기(slope)가 의미하는 것은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "독립변수가 1 증가할 때 종속변수의 평균 변화량" },
@@ -20,6 +21,7 @@
     {
       "qid": "9-1-Q02",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "다음 중 결정계수(R²)에 대한 설명으로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "예측 오차의 평균 크기" },
@@ -31,6 +33,7 @@
     {
       "qid": "9-1-Q03",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "MSE(Mean Squared Error)에 대한 설명으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "값이 클수록 예측이 정확하다" },
@@ -42,6 +45,7 @@
     {
       "qid": "9-1-Q04",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "강의에서 언급된 선형회귀 결과(R² ≈ 0.34)에 대한 해석으로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "모델이 데이터를 거의 완벽히 설명한다" },
@@ -53,6 +57,7 @@
     {
       "qid": "9-1-Q05",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Formula 위젯을 사용해 WineQuality 변수를 생성할 때 사용하는 조건문의 기본 구조는?",
       "choices": [
         { "cid": "A", "text": "if 조건 then 값" },
@@ -64,6 +69,7 @@
     {
       "qid": "9-1-Q06",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Test & Score 위젯에서 100회의 무작위 샘플링 실험을 수행할 때 설정으로 옳은 것은?",
       "choices": [
         { "cid": "A", "text": "Cross-validation, 10 folds" },
@@ -75,6 +81,7 @@
     {
       "qid": "9-1-Q07",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "Permutation Plot의 목적에 가장 부합하는 설명은?",
       "choices": [
         { "cid": "A", "text": "변수 중요도를 계산하기 위해" },
@@ -86,6 +93,7 @@
     {
       "qid": "9-1-Q08",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Random Forest 모델이 Decision Tree 모델보다 일반화 성능이 좋은 주된 이유는 무엇인가?",
       "choices": [
         { "cid": "A", "text": "하나의 트리를 매우 깊게 학습하기 때문" },
@@ -97,6 +105,7 @@
     {
       "qid": "9-1-Q09",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "Calibration Plot에서 모델이 overconfidence 상태라는 것은 무엇을 의미하는가?",
       "choices": [
         { "cid": "A", "text": "예측 확률이 실제보다 낮게 나오는 상태" },
@@ -108,6 +117,7 @@
     {
       "qid": "9-1-Q10",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "머신러닝 모델을 평가할 때 정확도(Accuracy)만이 아니라 Permutation Plot과 Calibration Plot을 함께 사용하는 이유로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "모델의 학습 속도를 비교하기 위해" },

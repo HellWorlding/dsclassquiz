@@ -10,6 +10,7 @@
     {
       "qid": "10-2-Q01",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Gradient Boosting의 기본 원리에 대한 설명으로 가장 적절한 것은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "하나의 강한 학습기를 한 번에 학습시켜 예측 성능을 높인다" },
@@ -21,7 +22,8 @@
     {
       "qid": "10-2-Q02",
       "type": "mcq",
-      "prompt": "Gradient Boosting에서 ‘잔차(residual)’의 역할로 가장 알맞은 것은?",
+      "difficulty": 2,
+      "prompt": "Gradient Boosting에서 '잔차(residual)'의 역할로 가장 알맞은 것은?",
       "choices": [
         { "cid": "A", "text": "입력 변수의 스케일을 조정하는 값" },
         { "cid": "B", "text": "이전 모델이 예측하지 못한 오차 정보" },
@@ -32,6 +34,7 @@
     {
       "qid": "10-2-Q03",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "XGBoost의 특징으로 옳지 않은 것은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "정규화(regularization)를 통해 과적합을 제어한다" },
@@ -43,6 +46,7 @@
     {
       "qid": "10-2-Q04",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "XGBoost에서 regularization(λ)을 크게 설정했을 때 일반적으로 나타나는 현상은?",
       "choices": [
         { "cid": "A", "text": "모델이 복잡해지고 과적합 가능성이 증가한다" },
@@ -54,6 +58,7 @@
     {
       "qid": "10-2-Q05",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "Feature Importance를 사용하는 가장 주요한 목적은 무엇인가?",
       "choices": [
         { "cid": "A", "text": "데이터 수를 증가시키기 위해" },
@@ -65,6 +70,7 @@
     {
       "qid": "10-2-Q06",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "AUC(Area Under Curve)에 대한 설명으로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "0에 가까울수록 분류 성능이 우수하다" },
@@ -76,6 +82,7 @@
     {
       "qid": "10-2-Q07",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Orange3에서 XAI(설명가능한 인공지능)의 필요성으로 가장 거리가 먼 것은?",
       "choices": [
         { "cid": "A", "text": "모델 판단의 신뢰성 확보" },
@@ -87,6 +94,7 @@
     {
       "qid": "10-2-Q08",
       "type": "mcq",
+      "difficulty": 3,
       "prompt": "XGBoost와 Logit Regression을 함께 사용하는 이유로 가장 적절한 것은?",
       "choices": [
         { "cid": "A", "text": "예측 정확도를 무조건 100%로 만들기 위해" },
@@ -98,11 +106,13 @@
     {
       "qid": "10-2-Q09",
       "type": "short",
+      "difficulty": 2,
       "prompt": "XAI의 핵심 목적을 한 문장으로 서술하시오."
     },
     {
       "qid": "10-2-Q10",
       "type": "essay",
+      "difficulty": 3,
       "prompt": "XGBoost 기반 Feature Importance 분석 후 Logit Regression을 추가로 수행하는 것이 왜 연구적으로 의미 있는지 설명하시오."
     }
   ],

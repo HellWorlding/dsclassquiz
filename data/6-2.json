@@ -9,6 +9,7 @@
     {
       "qid": "6-2-Q01",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "FasterRisk 모델에서 아무 정보가 없을 때 기본적으로 설정되는 확률은 얼마입니까?",
       "choices": [
         { "cid": "A", "text": "0%" },
@@ -20,6 +21,7 @@
     {
       "qid": "6-2-Q02",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "FasterRisk가 Decision Tree와 비교하여 특히 강조하는 장점은 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "계산 속도가 매우 빠르다" },
@@ -31,6 +33,7 @@
     {
       "qid": "6-2-Q03",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Type 1 Error에 해당하는 설명으로 가장 올바른 것은 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "실제 양성인데 음성으로 예측한 경우" },
@@ -42,6 +45,7 @@
     {
       "qid": "6-2-Q04",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "의료 진단 문제에서 Type 2 Error가 특히 치명적인 이유는 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "검사 비용이 증가하기 때문에" },
@@ -53,6 +57,7 @@
     {
       "qid": "6-2-Q05",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "강의에서 강조한 내용으로 옳은 설명은 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "Type 1·2 Error는 혼동행렬의 위치로만 결정된다" },
@@ -64,6 +69,7 @@
     {
       "qid": "6-2-Q06",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "사후적 경제성 분석에서 머신러닝 모델을 비교하는 최종 목적은 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "정확도를 가장 높이는 모델을 찾기 위해" },
@@ -75,6 +81,7 @@
     {
       "qid": "6-2-Q07",
       "type": "mcq",
+      "difficulty": 1,
       "prompt": "앙상블(Ensemble) 기법의 기본 아이디어로 가장 적절한 것은 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "하나의 강력한 모델을 선택한다" },
@@ -86,6 +93,7 @@
     {
       "qid": "6-2-Q08",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Random Forest가 Decision Tree 단독 사용보다 과적합에 강한 이유는 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "트리 깊이가 항상 얕기 때문이다" },
@@ -97,6 +105,7 @@
     {
       "qid": "6-2-Q09",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Bagging(Bootstrap Aggregating)에 대한 설명으로 옳은 것은 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "데이터를 한 번만 추출해 학습한다" },
@@ -108,6 +117,7 @@
     {
       "qid": "6-2-Q10",
       "type": "mcq",
+      "difficulty": 2,
       "prompt": "Random Forest에서 Feature Importance의 의미로 가장 적절한 것은 무엇입니까?",
       "choices": [
         { "cid": "A", "text": "변수가 많을수록 중요도가 높다" },

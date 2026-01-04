@@ -761,6 +761,20 @@ class QuizApp {
             badge.classList.add('essay');
         }
 
+        // 난이도 배지 표시
+        const difficultyBadge = document.getElementById('difficulty-badge');
+        if (difficultyBadge && question.difficulty) {
+            const difficultyLevel = question.difficulty;
+            const stars = '★'.repeat(difficultyLevel);
+            const difficultyClass = difficultyLevel === 1 ? 'easy' : difficultyLevel === 2 ? 'medium' : 'hard';
+            const difficultyText = difficultyLevel === 1 ? '쉬움' : difficultyLevel === 2 ? '보통' : '어려움';
+            difficultyBadge.className = `difficulty-badge ${difficultyClass}`;
+            difficultyBadge.innerHTML = `<span class="difficulty-star">${stars}</span> ${difficultyText}`;
+            difficultyBadge.style.display = 'inline-flex';
+        } else if (difficultyBadge) {
+            difficultyBadge.style.display = 'none';
+        }
+
         document.getElementById('question-prompt').textContent = question.prompt;
 
         document.getElementById('choices-container').style.display = 'none';
